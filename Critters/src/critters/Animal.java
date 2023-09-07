@@ -2,14 +2,14 @@
 package critters;
 
 
-public abstract class Animal {
+public abstract class Animal implements Noisy {
     private String name;
     private int age;
     private double weight;
     private static int animalCounter;
     
     
-    public abstract String makeSound();
+    
 
     public Animal() {
         animalCounter++;

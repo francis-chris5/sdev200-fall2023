@@ -36,9 +36,16 @@ public class Zoo {
         
         Cat fluffy = new Cat("fluffy", 5, 12.3);
         zoo.listen(fluffy);
+        
+        zoo.whatIsIt(fluffy);
+        zoo.whatIsIt(nemo);
     }
     
-    public void listen(Animal animal){
-        System.out.println(animal.makeSound());
+    public <T extends Noisy> void listen(T thing){
+        System.out.println(thing.makeSound());
+    }
+    
+    public <T> String whatIsIt(T t){
+        return t.toString();
     }
 }

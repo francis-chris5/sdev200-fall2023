@@ -26,5 +26,11 @@ public class Cat extends Animal {
     public String makeSound() {
         return "meow";
     }
+
+    @Override
+    public String toString() {
+        return "Cat{" + '}';
+    }
+    
     
 }

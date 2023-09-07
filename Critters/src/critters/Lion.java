@@ -28,5 +28,10 @@ public class Lion extends Animal {
     public String makeSound() {
         return "Roar!!!";
     }
+
+    @Override
+    public String toString() {
+        return "Lion{" + '}';
+    }
     
 }

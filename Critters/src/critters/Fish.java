@@ -35,13 +35,17 @@ public class Fish extends Animal {
 
     @Override
     public String toString() {
-        return super.toString() + "color=" + color + '}';
+        return "Fish{" + '}';
     }
+
+    
 
     @Override
     public String makeSound() {
         return "boop...";
     }
+    
+    
     
     
 }

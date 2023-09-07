@@ -36,6 +36,12 @@ public class Dog extends Animal{
     public String makeSound() {
         return "Woof!";
     }
+
+    @Override
+    public String toString() {
+        return "Dog{" + '}';
+    }
+    
     
     
     
