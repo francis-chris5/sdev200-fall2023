@@ -2,16 +2,14 @@
 package critters;
 
 
-public class Animal {
+public abstract class Animal {
     private String name;
     private int age;
     private double weight;
     private static int animalCounter;
     
     
-    public String makeSound(){
-        return "ROAR!!!";
-    }
+    public abstract String makeSound();
 
     public Animal() {
         animalCounter++;

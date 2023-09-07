@@ -23,5 +23,10 @@ public class Lion extends Animal {
     public Lion(String name, int age, double weight) {
         super(name, age, weight);
     }
+
+    @Override
+    public String makeSound() {
+        return "Roar!!!";
+    }
     
 }
