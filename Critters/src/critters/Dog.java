@@ -5,18 +5,23 @@ public class Dog extends Animal{
     private boolean wearsBandana;
 
     public Dog() {
+        super();
+        this.setSkin(Covering.HAIR);
     }
 
     public Dog(String name) {
         super(name);
+        this.setSkin(Covering.HAIR);
     }
 
     public Dog(int age, double weight) {
         super(age, weight);
+        this.setSkin(Covering.HAIR);
     }
 
     public Dog(String name, double weight) {
         super(name, weight);
+        this.setSkin(Covering.HAIR);
     }
 
     public Dog(String name, int age, double weight, boolean wearsBandana) {
