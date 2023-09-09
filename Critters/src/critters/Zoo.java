@@ -66,38 +66,38 @@ public class Zoo {
     }
     
     
-//    public <T  extends Comparable & Noisy> void whatsCoatingIt(T t){
-//        switch(t.getSkin()){
-//            case SCALES:
-//                System.out.println("that sure is a scaley thing");
-//                break;
-//            case HAIR:
-//                System.out.println("this thing is shedding everywhere");
-//                break;
-//            case FEATHERS:
-//                System.out.println("those look like soft feathers");
-//                break;
-//            case SLIME:
-//                System.out.println("this thing sure is slippery");
-//                break;
-//            case SHELL:
-//                System.out.println("that's a thick shell");
-//                break;
-//            default:
-//                System.out.println("no idea what that is");
-//        }
-//    }
-    
-    public <T> void whatsCoatingIt(T t){
-        Animal thing = (Animal)t;
-        if(thing.getSkin() == Covering.FEATHERS){
-            System.out.println("those look like soft feathers");
-        }
-        else if(thing.getSkin() == Covering.HAIR){
-            System.out.println("this thing is shedding everywhere");
-        }
-        else if(thing.getSkin() == Covering.SCALES){
-            System.out.println("that sure is a scaley thing");
+    public <T  extends Comparable & Noisy> void whatsCoatingIt(T t){
+        switch(t.getSkin()){
+            case SCALES:
+                System.out.println("that sure is a scaley thing");
+                break;
+            case HAIR:
+                System.out.println("this thing is shedding everywhere");
+                break;
+            case FEATHERS:
+                System.out.println("those look like soft feathers");
+                break;
+            case SLIME:
+                System.out.println("this thing sure is slippery");
+                break;
+            case SHELL:
+                System.out.println("that's a thick shell");
+                break;
+            default:
+                System.out.println("no idea what that is");
         }
     }
+    
+//    public <T> void whatsCoatingIt(T t){
+//        Animal thing = (Animal)t;
+//        if(thing.getSkin() == Covering.FEATHERS){
+//            System.out.println("those look like soft feathers");
+//        }
+//        else if(thing.getSkin() == Covering.HAIR){
+//            System.out.println("this thing is shedding everywhere");
+//        }
+//        else if(thing.getSkin() == Covering.SCALES){
+//            System.out.println("that sure is a scaley thing");
+//        }
+//    }
 }

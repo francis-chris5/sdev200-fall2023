@@ -24,9 +24,12 @@ public class Dog extends Animal{
         this.setSkin(Covering.HAIR);
     }
 
+    
+    //Error in class: forgot to put covering in this constructor
     public Dog(String name, int age, double weight, boolean wearsBandana) {
         super(name, age, weight);
         this.wearsBandana = wearsBandana;
+        this.setSkin(Covering.HAIR); //this line was ommitted in class throwing that null pointer exception
     }
 
     public boolean isWearsBandana() {
