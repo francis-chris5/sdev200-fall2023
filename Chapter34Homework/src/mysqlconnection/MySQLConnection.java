@@ -25,8 +25,8 @@ public class MySQLConnection {
         System.out.println(result);
         result = normalConnector.createGirlTable();
         
-        RetrieveData rd = new RetrieveData("https://liveexample.pearsoncmg.com/data/babynamesranking2008.txt");
-        ArrayList<String[]> lines = rd.getLines();
+        RetrieveData retrieveData = new RetrieveData("https://liveexample.pearsoncmg.com/data/babynamesranking2008.txt");
+        ArrayList<String[]> lines = retrieveData.getLines();
         lines.forEach(e -> {
             normalConnector.insertBoyData(e[1], Integer.parseInt(e[2]));
             normalConnector.insertGirlData(e[3], Integer.parseInt(e[4]));

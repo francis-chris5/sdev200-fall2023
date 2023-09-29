@@ -9,17 +9,17 @@ import java.util.ArrayList;
 
 public class RetrieveData {
     private URL babyNamesSite;
-    private BufferedReader br;
+    private BufferedReader dataStream;
     private ArrayList<String[]> lines = new ArrayList<>(); //0 is id, 1 is boy name, 2 is boy count, 3 is girl name, 4 is girl count
 
     public RetrieveData(String babyNamesSite) {
         try {
             this.babyNamesSite = new URL(babyNamesSite);
-            br = new BufferedReader(new InputStreamReader(this.babyNamesSite.openStream()));
+            dataStream = new BufferedReader(new InputStreamReader(this.babyNamesSite.openStream()));
             while(true){
-                String s = br.readLine();
-                if(s != null){
-                    String[] names = s.split("\t");
+                String nextLine = dataStream.readLine();
+                if(nextLine != null){
+                    String[] names = nextLine.split("\t");
                     for(int i=0; i<names.length; i++){
                         names[i] = names[i].trim();
                     }
