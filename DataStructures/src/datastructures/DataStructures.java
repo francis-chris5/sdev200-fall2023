@@ -3,10 +3,13 @@ package datastructures;
 
 import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Queue;
+import java.util.Scanner;
 import java.util.Set;
 import java.util.Stack;
+import java.util.TreeMap;
 import java.util.Vector;
 
 public class DataStructures {
@@ -99,6 +102,29 @@ public class DataStructures {
         for(Object s : s2){
             System.out.println(s);
         }
+        
+        System.out.println("\n\n------------- map  ----------");
+        Map<String, String> europeanCapitals = new TreeMap<>();
+        europeanCapitals.put("england", "london");
+        europeanCapitals.put("germany", "berlin");
+        europeanCapitals.put("hungary", "budapest");
+        europeanCapitals.put("france", "paris");
+        europeanCapitals.put("italy", "rome");
+        europeanCapitals.put("spain", "madrid");
+        
+        //System.out.println(europeanCapitals.get("hungary"));
+        System.out.print("what country do you want to know the capital of? ");
+        Scanner keyboard = new Scanner(System.in);
+        String request = keyboard.next();
+        if(europeanCapitals.containsKey(request)){
+            System.out.println("that would be " + europeanCapitals.get(request));
+        }
+        else{
+            System.out.println("I have no idea what the capital is.");
+        }
+        
+        
+        
         
     }//end main()
     

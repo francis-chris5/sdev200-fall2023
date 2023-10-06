@@ -1,0 +1,24 @@
+Notes on Data Structures
+
+Collections (just have a bunch of data to process):
+	More functionality is added as it goes down the list
+		Set (just have stuff, only rule is no duplicates)
+			-Set is abstract, must instantiate as HashSet, LinkedHashSet, or TreeSet
+		Vector (order comes into play so indexing appears here)
+		List (pointers instead of algorithm to find next element, more dynamic)
+			-List is abstract so needs a concrete type to instantiate, we've seen the following two in class but there are many more
+				ArrayList (a vector where the elements are arrays)
+				LinkedList (pointers intstead of algorithm)
+
+
+Maps (key value pairs):
+	The collection type is defined by how keys and values are stored in memory, a key is used to access the value instead of an index like we have in an array or list
+		Map (key value pair data structure)
+			-map is abstract so need to instantiate it with HashMap or TreeMap
+			-any object can be a key, but most people find it makes the most sense to use a string
+		HashTable
+			-the key is the hash of the value, which results in a code structure that perfectly matches the physical components of the RAM chips
+		BinarySearchTree
+			-a binary tree data structure with "smaller" elements on a branch to the left and "bigger" elements on a branch to the right of each node
+		Heap
+			-a speical full binary tree where the root is either the largest or smallest element and each level of the tree has values increasing from left to right
