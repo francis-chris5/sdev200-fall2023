@@ -13,6 +13,11 @@ public class GetData {
         this.username = username;
         this.password = password;
         
+        EmployeeStack stack = this.getPayrollStack();
+        
+        while(!stack.isEmpty()){
+            stack.pop(stack);
+        }
     }
     
     

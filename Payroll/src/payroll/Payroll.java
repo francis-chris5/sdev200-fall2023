@@ -9,16 +9,6 @@ public class Payroll {
     
     
     public static void main(String[] args) {
-        long start = System.nanoTime();
-        GetData data = new GetData(url, username, password);
-        
-        EmployeeStack stack = data.getPayrollStack();
-        
-        while(!stack.isEmpty()){
-            stack.pop(stack);
-        }
-        
-        long end = System.nanoTime();
-        System.out.println((end-start));
+        new GetData(url, username, password);
     }
 }
